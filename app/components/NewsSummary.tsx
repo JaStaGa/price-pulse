@@ -46,19 +46,19 @@ export default function NewsSummary({ id }: { id: string }) {
     return (
         <div className="mt-10">
             {summary && (
-                <div className="mb-6 p-4 bg-black-400 border border-blue-600 rounded">
-                    <h3 className="font-semibold text-sm mb-1">AI Summary</h3>
-                    <p className="text-sm">{summary}</p>
+                <div className="mb-6 p-4 bg-slate-800 border border-blue-600 rounded shadow-sm">
+                    <h3 className="font-semibold text-sm text-slate-200 mb-1">AI Summary</h3>
+                    <p className="text-sm text-slate-300">{summary}</p>
                 </div>
             )}
 
-            <h2 className="text-lg font-semibold mb-2">Recent News</h2>
-            <ul className="space-y-2 text-sm text-gray-700">
+            <h2 className="text-lg font-semibold text-slate-100 mb-2">Recent News</h2>
+            <ul className="space-y-2 text-sm">
                 {news.slice(0, 5).map((item, i) => (
                     <li key={i}>
                         <a
                             href={item.link}
-                            className="text-blue-600 underline"
+                            className="text-blue-400 hover:text-blue-300 underline"
                             target="_blank"
                             rel="noopener noreferrer"
                         >

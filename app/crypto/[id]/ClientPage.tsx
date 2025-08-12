@@ -12,7 +12,7 @@ export default function ClientPage({
 }) {
     return (
         <main className="min-h-screen p-8 sm:p-12">
-            <h1 className="text-2xl font-bold mb-6">{id.toUpperCase()} Chart</h1>
+            <h1 className="text-2xl font-bold text-slate-100 mb-6">{id.toUpperCase()} Chart</h1>
             <CryptoChart data={chartData} />
             <NewsSummary id={id} />
         </main>
